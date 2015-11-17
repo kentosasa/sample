@@ -59,10 +59,10 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
-set :stage, :development
+set :stage, :production
 role :app, %w{root@153.126.174.105}
-role :web, %w{root@$153.126.174.105}
-role :db, %w{root@$153.126.174.105}
+role :web, %w{root@153.126.174.105}
+role :db, %w{root@153.126.174.105}
 
 server '153.126.174.105',
   user: 'root',
