@@ -1,0 +1,9 @@
+/Users/Kento/.rbenv/versions/2.2.0/bin/ruby -r ./siteconf20151117-45139-qil04p.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
