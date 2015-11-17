@@ -59,3 +59,15 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+set :stage, :development
+role :app, %w{root@153.126.174.105}
+role :web, %w{root@$153.126.174.105}
+role :db, %w{root@$153.126.174.105}
+
+server '153.126.174.105',
+  user: 'root',
+  roles: %w{web app db},
+  ssh_options: {
+     auth_methods: %w(password),
+      password: 'kent0pass'
+  }
